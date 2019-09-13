@@ -1,0 +1,42 @@
+Algorithm:
+
+Step 1: INITALIZATION
+	points=0
+	top=-1
+	max=10
+	i=9	
+
+step 2:	STORING QUESTION AND ANSWER
+
+	construct 2D array name stackQ of sixe10*256
+	Initalize the stack with questions of decreasing difficulty such that easiest question is pushed last to pop first.	
+	Push answer into the array name stackAns.
+	
+Step 3: 
+	print "Welcome"
+	scan name.
+	
+Step 4:	
+		print stackQ[i]
+		scan ans
+		if (ans=stackAns[i])
+			points=points+(10-i)*10
+			print "correct"
+
+		else if(ans=0)
+			print "You quit"
+
+		else
+			print "Correct answer is %d",stackAns
+			points = points -50
+			break
+		
+Step 4:
+	i--
+	if(i>=0)
+		goto STEP 4
+
+Step 5:	
+	print points
+
+Step 6:END.
